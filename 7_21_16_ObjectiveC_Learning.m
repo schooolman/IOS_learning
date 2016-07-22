@@ -35,6 +35,15 @@ NSUInteger tillyAge = tillyDog * dogMultiplyer;
 // log out the results
 NSLog(@"My dog Tilly is %lu years old....in dog years", tillyAge);
 
+// nesting strings
+
+NSString *firstName = @"Jacob Schoolmeesters";
+NSString *lastName = @"SCHOOLMAN";
+
+NSString *fullName = [[firstName stringByAppendingString:@" "] stringByAppendingString:lastName];
+
+NSLog(@"%@", fullName);
+
 
 
 
