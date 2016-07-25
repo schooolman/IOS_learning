@@ -82,6 +82,16 @@ if(jakeSchoolmanIsMean){
 	NSLog(@"OF COURSE YOU FOOL");
 }
 
+// using cases to identify results, and the intValue message to create a boolean.
+
+if([meannessScale intValue] < 4) {
+  NSLog(@"Mr. Higgie is on the nice side");
+} else if(4-7) {
+  NSLog(@"Mr. Higgie is sorta nice but not really");
+} else {
+  NSLog(@"Mr. Higgie is definitely mean");
+}
+
 
 
 
