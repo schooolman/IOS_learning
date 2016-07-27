@@ -92,8 +92,103 @@ if([meannessScale intValue] < 4) {
   NSLog(@"Mr. Higgie is definitely mean");
 }
 
+// Comparing Strings
+if([myString isEqualToString:otherString]) {
+  NSLog(@"Hello from inside the if!");
+}
+
+// isEqualToString will evauluate exact string for match
+
+NSString *hat = [mrHiggie currentHat];
+
+if([hat isEqualToString:@"Sombrero"]){
+  NSLog(@"Ese es un muy buen sombrero");
+}else if ([hat isEqualToString:@"Fedora"]){
+  NSLog(@"Mr. Higgie was an iPhone before there was iPhone");
+}else if ([hat isEqualToString:@"AstronautHelmet"]){
+  NSLog(@"You could log anything here");
+}else{
+  NSLog(@"Mr. Higgie wears no hat");
+}
+
+// Objective C Switch Cases
+
+NSInteger day = getDayOfWeek();
+
+switch (day) {
+  case 1:
+  case 2:
+  case 3:
+  case 4: {
+    [mrHiggie setCurrentHat:@"Fedora"];
+    break;
+  }
+  case 5: {
+    [mrHiggie setCurrentHat:@"Sombrero"];
+    break;
+  }
+  case 6:
+  case 7: {
+    [mrHiggie setCurrentHat:@"AstronautHelmet"];
+    break;
+  }
+}
+
+NSLog(@"Mr. Higgie is wearing: %@", [mrHiggie currentHat]);
+
+DayOfWeek day = getDayOfWeek();
+
+switch (day) {
+    case DayOfWeekMonday:
+    case DayOfWeekTuesday:
+    case DayOfWeekWednesday:
+    case DayOfWeekThursday: {
+        [mrHiggie setCurrentHat:@"Fedora"];
+        break;
+    }
+    case DayOfWeekFriday: {
+        [mrHiggie setCurrentHat:@"Sombrero"];
+        break;
+    }
+  case DayOfWeekSaturday: {
+    	[mrHiggie setCurrentHat:@"CoolHat"];
+  }
+    case DayOfWeekSunday: {
+        [mrHiggie setCurrentHat:@"AstronautHelmet"];
+        break;
+    }
+}
+
+NSLog(@"Mr. Higgie is wearing: %@", [mrHiggie currentHat]);
 
 
+// Objective C Loops
+
+NSArray *newHats = @[@"Cowboy", @"Conductor", @"Baseball"];
+
+for (/*//loop through newHats//*/) {
+
+  NSLog(@"Trying on new %@ hat", hat);
+
+  if([mrHiggie tryOnHat:hat]) {
+    NSLog(@"Mr. Higgie loves it");
+  } else {
+    NSLog(@"Mr. Higgie hates it");
+  }
+}
+
+NSArray *newHats = @[@"Cowboy", @"Conductor", @"Baseball"];
+
+for (NSString *hat in newHats) {
+
+  NSLog(@"Trying on new %@ hat", hat);
+
+  if([mrHiggie tryOnHat:hat]) {
+    NSLog(@"Mr. Higgie loves it");
+  } else {
+    NSLog(@"Mr. Higgie hates it");
+  }
+}
 
 
 
