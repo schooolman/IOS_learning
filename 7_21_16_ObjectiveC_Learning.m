@@ -225,5 +225,63 @@ for (NSString *word in funnyWords){
 }
 
 
+// Creating an NSDictionary to run through with the enumerate for loop.
+
+NSDictionary *newHats = @{                                                                                                    
+  @"Cowboy": @"White",
+  @"Conductor": @"Brown",
+  @"Baseball": @"Red"
+};
+
+for (NSString *hat in newHats){
+
+  NSString *color = newHats[hat];
+
+  NSLog(@"Trying on new %@ %@ hat", color, hat);
+
+  if([mrHiggie tryOnHat:hat withColor:color]) {
+    NSLog(@"Mr. Higgie loves it");
+  } else {
+    NSLog(@"Mr. Higgie hates it");
+  }
+}
+
+
+// Objective-C Blocks... aka functions
+// ^blockName = ^{
+// 	some code here
+// }
+
+// Must specify what type of value the block will return, use void if nothing is returned
+
+void (^myFirstBlock)(void) = ^{
+  NSLog(@"THIS IS THE FIRST BLOCK THAT I HAVE WRITTEN!!!");
+};
+
+myFirstBlock();
+
+// Passing a string to a block
+void (^myFirstBlock)(NSString *) = ^(NSString *words){
+  NSLog(@"Hello from inside the block %@", words);
+};
+
+myFirstBlock(@"Hello");
+myFirstBlock(@"World");
+
+
+
+// enumerateObjectUsingBlock to replace a for loop.
+//shorthand for writing loops in a sense
+
+NSArray *newHats = @[@"Cowboy", @"Conductor", @"Baseball", 
+  @"Beanie", @"Beret", @"Fez"];
+
+
+[newHats enumerateObjectsUsingBlock:
+ ^(NSString *hat, NSUInteger index, BOOL *stop){
+   NSLog(@"%@ is a funny word", index+1, hat);
+ }
+ ];
+
 
 
