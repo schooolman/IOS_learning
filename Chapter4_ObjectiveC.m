@@ -22,3 +22,24 @@
 @implementation SillyIphone
 @end
 
+
+// Note: Properties, although accessed and set using dot notation, use message sending under the hood. When you write person.firstName, it actually calls [person firstName] and when you write person.firstName = @"Eric" it actually calls [person setFirstName:@"Eric"]
+
+SillyIphone *talkingiPhone = [[SillyIphone alloc] init];
+talkingiPhone.phoneName = @"Kelly";
+NSLog(@"%@", talkingiPhone.phoneName);
+
+
+// Challenge 7
+
+// #import "SillyIphone.h"                                          
+
+/*//Create a SillyIphone object and call it talkingDroid//*/
+SillyIphone *talkingDroid = [[SillyIphone alloc] init];
+
+/*//Set its phoneName and modelNumber properties//*/
+talkingDroid.phoneName = @"Dennis";
+talkingDroid.modelNumber = @"Droid123";
+
+NSLog(@"phoneName: %@", talkingDroid.phoneName);
+NSLog(@"modelNumber: %@", talkingDroid.modelNumber);
