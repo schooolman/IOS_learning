@@ -43,3 +43,32 @@ talkingDroid.modelNumber = @"Droid123";
 
 NSLog(@"phoneName: %@", talkingDroid.phoneName);
 NSLog(@"modelNumber: %@", talkingDroid.modelNumber);
+
+
+// // Defining the speak message
+// @interface SillyIphone : NSObject
+
+// // list of properties
+
+// -(void)speak;
+
+// @end
+
+// Calling the speak message
+#import "SillyIphone.h"
+
+@implementation SillyIphone
+
+- (void) speak;
+{
+  NSLog(@"Speaking Iphone");
+}
+@end
+
+
+
+
+SillyIphone *talkingiPhone = [[SillyIphone alloc] init];
+talkingiPhone.phoneName = @"Mr. Higgie";
+[talkingiPhone speak];
+
