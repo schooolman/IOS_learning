@@ -55,20 +55,42 @@ NSLog(@"modelNumber: %@", talkingDroid.modelNumber);
 // @end
 
 // Calling the speak message
+// #import "SillyIphone.h"
+
+// @implementation SillyIphone
+
+// - (void) speak;
+// {
+//   NSLog(@"Speaking Iphone");
+// }
+// @end
+
+
+
+
+// SillyIphone *talkingiPhone = [[SillyIphone alloc] init];
+// talkingiPhone.phoneName = @"Mr. Higgie";
+// [talkingiPhone speak];
+
+
+// Using the self message
+
+// #import "SillyIphone.h"
+
+// @implementation SillyIphone
+// -(void)speak;
+// {
+//     NSLog(@"%@ says Hello There!", self);
+// }
+// @end
+
+// using self to access phoneName
+
 #import "SillyIphone.h"
 
 @implementation SillyIphone
-
-- (void) speak;
+-(void)speak;
 {
-  NSLog(@"Speaking Iphone");
+    NSLog(@"%@", self.phoneName);
 }
 @end
-
-
-
-
-SillyIphone *talkingiPhone = [[SillyIphone alloc] init];
-talkingiPhone.phoneName = @"Mr. Higgie";
-[talkingiPhone speak];
-
