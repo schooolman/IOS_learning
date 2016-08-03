@@ -86,11 +86,22 @@ NSLog(@"modelNumber: %@", talkingDroid.modelNumber);
 
 // using self to access phoneName
 
+// #import "SillyIphone.h"
+
+// @implementation SillyIphone
+// -(void)speak;
+// {
+//     NSLog(@"%@", self.phoneName);
+// }
+// @end
+
+
 #import "SillyIphone.h"
 
 @implementation SillyIphone
--(void)speak;
-{
-    NSLog(@"%@", self.phoneName);
+  -(NSString *) speak{
+
+    NSString *message = [NSString stringWithFormat:@"%@ says Hello There!", self.phoneName];
+    return message;
 }
 @end

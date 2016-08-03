@@ -1,7 +1,7 @@
-@interface SillyIphone : NSObject
-@property NSString *phoneName;
-@property NSString *modelNumber;
-@end
+// @interface SillyIphone : NSObject
+// @property NSString *phoneName;
+// @property NSString *modelNumber;
+// @end
 
 
 
@@ -13,3 +13,12 @@
 // -(void)speak;
 // 
 // @end
+
+
+@interface SillyIphone : NSObject
+
+@property NSString *phoneName;
+@property NSString *modelNumber;
+
+- (NSString *) speak;
+@end
