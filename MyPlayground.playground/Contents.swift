@@ -96,3 +96,26 @@ while(numbers <= 10)  {
     print(numbers)
     numbers = numbers + 1
 }
+
+
+var optionalNumber: Int? = 5
+optionalNumber = nil
+
+
+if let number = optionalNumber {
+    print("UGHHHH!")
+} else {
+    print("AHHHH")
+}
+
+
+var languagesLearned: String = "3"
+var languagesLearnedNum: Int? = Int(languagesLearned)
+
+
+if let num = languagesLearnedNum  {
+    print("It is a number")
+}
+else  {
+    print("It is not a number")
+}
