@@ -32,10 +32,16 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wNo-36-KRR">
                                 <rect key="frame" x="251" y="62" width="98" height="30"/>
                                 <state key="normal" title="Next Question"/>
+                                <connections>
+                                    <action selector="showNextQuestion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F2g-4c-Xdj"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lsw-eU-TNZ">
                                 <rect key="frame" x="254" y="317" width="93" height="30"/>
                                 <state key="normal" title="Show Answer"/>
+                                <connections>
+                                    <action selector="showAnswer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y08-uG-wQi"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -50,6 +56,10 @@
                             <constraint firstItem="8Sa-Vg-ZIn" firstAttribute="centerX" secondItem="wNo-36-KRR" secondAttribute="centerX" id="t0U-iI-yBf"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="answerLabel" destination="XOe-s5-xfL" id="Igi-pR-hn6"/>
+                        <outlet property="questionLabel" destination="8Sa-Vg-ZIn" id="7MY-w7-fGz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
