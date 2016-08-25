@@ -46,7 +46,7 @@ str = "hello, swift"
 
 let constStr = str
 
-let number = 42
+//let number = 42
 let fmStation = 91.1
 
 //Arrays and dictionaries can be assigned literal values as well. Syntax resembles shorthand syntax for specifying these types
@@ -58,6 +58,33 @@ let countingUp =  ["one", "two"]
 let secondElement = countingUp[1]
 
 secondElement
+
+//Standard types have initializers that return empty literals when no arguments are supplied
+let eptyString = String()
+let emptyArrayOfInts = [Int]()
+let emptySetOfFloats = Set<Float>()
+
+//Other types have default values
+let defaultNumber = Int()
+let defaultBool = Bool()
+
+//some can have multiple initializers, like String has an initializer that accepts an Int and creates a string based on that value
+let number = 42
+//This will turn the integer into a string
+let meaningOfLife = String(number)
+
+//Float has several initializers. 
+let defaultFloat = Float()
+let floatFromLiteral = Float(3.14)
+
+//Floating point literal will defaul to Double.
+let easyPi = 3.14
+let floatFromDouble = Float(easyPi)
+let floatingPi: Float = 3.14
+
+
+
+
 
 
 
