@@ -101,6 +101,46 @@ countingUp.count
 
 countingUp.append("three")
 
+//Optionals
+//Swift types can be optional, which is indicated by appending ? to a type name
+
+var anOptionalFloat: Float?
+var anOptionalArrayOfStrings: [String]?
+var anOptionalArrayOfOptionalStrings: [String?]?
+
+var reading1: Float?
+var reading2: Float?
+var reading3: Float?
+
+reading1 = 9.3
+reading2 = 3.3
+//reading3 = 2.2
+
+//unwrapping the optional
+//Forced unwrapping of an optional
+
+//This below results in an error because the optionals declared above need to be unwrapped.
+//let avgReading = (reading1 + reading2 + reading3) / 3
+//By using an ! to forcible unwrap an optional you are telling the compiler that it will no longer be an optional, so it cannot default back to nil
+//let avgReading = (reading1! + reading2! + reading3!) / 3
+
+//Below is a safer way to unwrap an optional called optional binding
+//To do this you use an if-let statement. 
+//This assings a temporary constant, if it has a value than it is valid, if the optional is nil the you handle that case with an else clause. See below example.
+
+if let r1 = reading1,
+    r2 = reading2,
+    r3 = reading3 {
+    let avgReading2 = (r1 + r2 + r3) / 3
+} else {
+    let errorString = "Instrument reported a reading that was nil."
+}
+
+
+
+
+
+
 
 
 
