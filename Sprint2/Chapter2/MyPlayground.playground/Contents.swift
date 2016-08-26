@@ -52,7 +52,7 @@ let fmStation = 91.1
 //Arrays and dictionaries can be assigned literal values as well. Syntax resembles shorthand syntax for specifying these types
 
 let countinUp = ["one", "two"]
-let nameByParkingSpace = [13: "alice", 27: "Bob"]
+//let nameByParkingSpace = [13: "alice", 27: "Bob"]
 
 //let countingUp =  ["one", "two"]
 //let secondElement = countingUp[1]
@@ -136,20 +136,17 @@ if let r1 = reading1,
     let errorString = "Instrument reported a reading that was nil."
 }
 
+//Subscripting dictionaries
+//The result of subscripting a dictionary is an optional
 
+let nameByParkingSpace = [13: "Alice", 27: "Bob"]
+//let space13Assignee: String? = nameByParkingSpace[13]
+let space42Assignee: String? = nameByParkingSpace[42]
 
+//If the key is not in the dictionary the result will then be nil. It is common to use if-let with subscripting dictionary
 
-
-
-
-
-
-
-
-
-
-
-
-
+if let space13Assignee = nameByParkingSpace[13] {
+    print("Key 13 is assigned in the dictionary!")
+}
 
 
