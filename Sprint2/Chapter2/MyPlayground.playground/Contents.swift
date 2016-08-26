@@ -54,10 +54,10 @@ let fmStation = 91.1
 let countinUp = ["one", "two"]
 let nameByParkingSpace = [13: "alice", 27: "Bob"]
 
-let countingUp =  ["one", "two"]
-let secondElement = countingUp[1]
+//let countingUp =  ["one", "two"]
+//let secondElement = countingUp[1]
 
-secondElement
+//secondElement
 
 //Standard types have initializers that return empty literals when no arguments are supplied
 let eptyString = String()
@@ -81,6 +81,31 @@ let floatFromLiteral = Float(3.14)
 let easyPi = 3.14
 let floatFromDouble = Float(easyPi)
 let floatingPi: Float = 3.14
+
+//Properties
+//A property is a value associated with an instance of a type.
+
+//let countingUp = ["one", "two"]
+//let secondElement = countingUp[1]
+countinUp.count
+
+let emptyString = ""
+emptyString.isEmpty
+
+//Instance Methods
+//An instance method is a function that is specific to a particular type and can be called on an instance of that type.
+
+var countingUp = ["one", "two"]
+let secondElement = countingUp[1]
+countingUp.count
+
+countingUp.append("three")
+
+
+
+
+
+
 
 
 
