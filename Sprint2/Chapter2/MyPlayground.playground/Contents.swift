@@ -199,6 +199,23 @@ default:
     print("greetings, updated your fucking os")
 }
 
+//Enumerations and raw values
+//Swift enums can have raw values associated with their cases:
+
+enum PieType2: Int {
+    case Apple = 0
+    case Cherry
+    case Pecan
+}
+
+let pieRawValue = PieType2.Pecan.rawValue
+//pieRawValue is an Int with a value of 2
+
+if let pieType2 = PieType2(rawValue: pieRawValue) {
+//    got a valid 'PieType'!
+}
+
+
 
 
 
