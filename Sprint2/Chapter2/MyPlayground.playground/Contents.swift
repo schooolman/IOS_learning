@@ -149,4 +149,58 @@ if let space13Assignee = nameByParkingSpace[13] {
     print("Key 13 is assigned in the dictionary!")
 }
 
+//Loops and String Interpolation
+
+//The enumerate() function returns a sequence of tuples. A tuple is an ordered grouping of values similar to an array, except each member may have a distinct type.
+
+// This is Swift's string interpolation. Any expression that is enclosed within \( and ) are evaluated and inserted into the string at runtime.
+// vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+for (space, name) in nameByParkingSpace {
+    let permit = "space \(space): \(name)"
+}
+
+
+//Enumerations and the Switch Statement
+//An enumeration is a type with a discret set of values.
+
+enum PieType {
+    case Apple
+    case Cherry
+    case Pecan
+}
+
+let favoritePie = PieType.Pecan
+
+//Switch has a powerful switch statement that, among other things, is great for matching on enum values:
+
+let name: String
+switch favoritePie {
+case .Apple:
+    name = "apple"
+case .Cherry:
+    name = "cherry"
+case .Pecan:
+    name = "Pecan"
+}
+
+//The cases for a switch statement must be exhaustive, each possible value of the switch expression must be accounted for.
+
+//Swtich statements can match on many types, even ranges:
+
+let osxVersion: Int = 8
+switch osxVersion{
+case 0...8:
+    print("A big cat")
+case 9:
+    print("ughe dumb!!")
+case 10:
+    print("winner")
+default:
+    print("greetings, updated your fucking os")
+}
+
+
+
+
+
 
