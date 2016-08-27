@@ -15,3 +15,5 @@
 //The window is created when the application launches. Once created other views can be added to it.
 //Views that are created when the window is launched are subviews, and those views can have their own subviews, thus creating a view hierarchy.
 
+//Every instance of UIView has a superview property, so when you add a subview of any view the inverse relationship of a superview is established.
+
