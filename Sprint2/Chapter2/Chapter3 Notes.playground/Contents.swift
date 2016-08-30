@@ -17,3 +17,7 @@
 
 //Every instance of UIView has a superview property, so when you add a subview of any view the inverse relationship of a superview is established.
 
+//The auto Layout System
+//This is used in laying out apps so that they are flexible regardless of the size of device that they are being displayed on.
+//The Auto Layout system is based on the alignment rectangle, which is defined by several layout attributes.
+//A constraint defines a specific relationship in a view hierarchy that can be used to determine a layout attribute for one or more views.  
