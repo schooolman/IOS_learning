@@ -21,3 +21,5 @@
 //This is used in laying out apps so that they are flexible regardless of the size of device that they are being displayed on.
 //The Auto Layout system is based on the alignment rectangle, which is defined by several layout attributes.
 //A constraint defines a specific relationship in a view hierarchy that can be used to determine a layout attribute for one or more views.  
+
+//property observer is a chunk of code that gets called whenever a property's value changes. 
