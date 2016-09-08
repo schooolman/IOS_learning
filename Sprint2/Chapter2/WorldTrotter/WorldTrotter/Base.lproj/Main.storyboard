@@ -51,6 +51,7 @@
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="decimalPad"/>
                                 <connections>
                                     <action selector="fahrenheitFieldEditingChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="L13-98-zNq"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Gq5-PF-Q2Y"/>
                                 </connections>
                             </textField>
                         </subviews>

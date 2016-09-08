@@ -11,7 +11,7 @@ import UIKit
 
 
 
-class ConversionViewController: UIViewController {
+class ConversionViewController: UIViewController, UITextFieldDelegate {
     
     
     let numberFormatter: NSNumberFormatter = {
@@ -71,6 +71,15 @@ class ConversionViewController: UIViewController {
         }
         
         
+    }
+    
+    func textField(textField: UITextField,
+                   shouldChangeCharactersInRange range: NSRange,
+                                                 replacementString string: String) -> Bool {
+        print("Current text: \(textField.text)")
+        print("replacement text: \(string)")
+        
+        return true
     }
     
    
